@@ -8,5 +8,6 @@ This repo contains a README.md file with the Tutorial's logo and each students n
 
 ## About
 
-* **Mark Sherif** - 37-2039 - [marksherif](https://github.com/marksherif)
-* **Omar Mokbel** - 37-5624 - [OmarMokbel](https://github.com/OmarMokbel)
+### C4
+
+* **Omar Mokbel** - *37-5624* - [OmarMokbel](https://github.com/OmarMokbel)
