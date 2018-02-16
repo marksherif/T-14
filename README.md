@@ -28,5 +28,6 @@ This repo contains a README.md file with the Tutorial's logo and each students n
 
 * **Ahmed Ibrahim** - 37-6999 - [ahmed807](https://github.com/ahmed807)
 
+* **Omar Mokbel** - *37-5624* - [OmarMokbel](https://github.com/OmarMokbel)
 
 ![tutorial logo](https://github.com/marksherif/T-14/blob/master/logo.png)
