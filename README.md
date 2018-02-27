@@ -33,8 +33,6 @@ This repo contains a README.md file with the Tutorial's logo and each students n
 
 * **Youssef Sabry** - *37-4237* - [youssefssabry](https://github.com/youssefssabry) 
 
-* **Mariam Attar** - *37-6078* - [mariamattar](https://github.com/mariamattar)
-
 * **Mohab Tarek** - *37-3145* - [mohabtarek96](https://github.com/mohabtarek96)
 
 * **Seif Hafez** - *37-737* - [SeifHafez](https://github.com/SeifHafez)
