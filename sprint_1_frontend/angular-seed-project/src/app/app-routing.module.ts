@@ -15,7 +15,7 @@ export const routes: Routes = [
       loadChildren: './dashboard/dashboard.module#DashboardModule'
     },
     { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
-    { path: '**', redirectTo: 'dashboard' }
+    { path: '**', redirectTo: 'dashboard' },
 
   {
     path: 'auth',
@@ -50,14 +50,14 @@ export const routes: Routes = [
 
 ];
 
-// const routes: Routes = [
-//   {
-//     path: 'dashboard',
-//     loadChildren: './dashboard/dashboard.module#DashboardModule'
-//   },
-//   { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
-//   { path: '**', redirectTo: 'dashboard' }
-// ];
+ // const routes: Routes = [
+ //   {
+ //     path: 'dashboard',
+ //     loadChildren: './dashboard/dashboard.module#DashboardModule'
+ //   },
+ //   { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
+ //   { path: '**', redirectTo: 'dashboard' }
+ // ];
 
 const config: ExtraOptions = {
   useHash: true
