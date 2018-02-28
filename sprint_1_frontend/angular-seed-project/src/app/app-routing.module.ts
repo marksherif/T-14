@@ -14,9 +14,6 @@ export const routes: Routes = [
       path: 'dashboard',
       loadChildren: './dashboard/dashboard.module#DashboardModule'
     },
-    { path: '', redirectTo: 'auth', pathMatch: 'full' },
-    { path: '**', redirectTo: 'dashboard' },
-
   {
     path: 'auth',
     component: NbAuthComponent,
@@ -47,6 +44,9 @@ export const routes: Routes = [
       },
     ],
   },
+    { path: '', redirectTo: 'auth/login', pathMatch: 'full' },
+    { path: '**', redirectTo: 'dashboard' },
+
 
 ];
 
