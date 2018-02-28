@@ -1,11 +1,16 @@
 
 # Project Title
 
-Sprint0 - T-14
+SE CRACKIN
 
 ## Getting Started
 
-This repo contains a README.md file with the Tutorial's logo and each students name and ID
+Pull this repo then insert your image in sprint_1_frontend/src/assets,then go to src/app/@theme/layouts/main.layout.ts
+and insert these lines of code after changing it to your coressponding name and image name:
+      <p id="p">Ali</p>
+      <a ><img id="y" src="../../../../assets/Ali.jpg" /></a>
+      <p id="p">Hello World!!!</p>
+
 
 ## About
 
