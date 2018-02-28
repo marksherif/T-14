@@ -33,16 +33,27 @@ import 'rxjs/add/operator/delay';
       </nb-sidebar>
 
       <nb-layout-column class="main-content">
+      <p id="p">This is us,T-14,our name is SE CRACKIN,we are MET Students.</p>
+      <p id="p">In this sprint "Sprint1" we are looking forward to learn about MEAN stack technologies and use them to build </p>
+      <p id="p">a successful application that combines all of the mean stack features. </p>
+
+
       <p id="p">Mustafa Salama</p>
       <a ><img id="y" src="../../../../assets/Salama.jpg" /></a>
+      <p> </p>
        <p id="p">Mahmoud Ashmawy</p>
        <img id="y" src="../../../../assets/Ashmawy.jpg" />
+         <p> </p>
        <p id="p">Ziad Ramzy</p>
       <a ><img id="y" src="../../../../assets/Ziad.jpg" /></a>
+        <p> </p>
       <p id="p">Mohab Tarek</p>
       <a ><img id="y" src="../../../../assets/Mohab.jpg" /></a>
+        <p> </p>
       <p id="p">Ali</p>
       <a ><img id="y" src="../../../../assets/Ali.jpg" /></a>
+      <p id="p">Hello World!!!</p>
+
 
         <ng-content select="router-outlet"></ng-content>
       </nb-layout-column>
