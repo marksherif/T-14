@@ -34,13 +34,15 @@ import 'rxjs/add/operator/delay';
 
       <nb-layout-column class="main-content">
       <p id="p">Mustafa Salama</p>
-      <a ><img id="y" src="Salama.jpg" /></a>  
+      <a ><img id="y" src="../../../../assets/Salama.jpg" /></a>
        <p id="p">Mahmoud Ashmawy</p>
-       <a ><img id="y" src="Ashmawy.jpg" /></a>
+       <img id="y" src="../../../../assets/Ashmawy.jpg" />
        <p id="p">Ziad Ramzy</p>
-      <a ><img id="y" src="Ziad.jpg" /></a> 
+      <a ><img id="y" src="../../../../assets/Ziad.jpg" /></a>
       <p id="p">Mohab Tarek</p>
-      <a ><img id="y" src="Mohab.jpg" /></a>   
+      <a ><img id="y" src="../../../../assets/Mohab.jpg" /></a>
+      <p id="p">Ali</p>
+      <a ><img id="y" src="../../../../assets/Ali.jpg" /></a>
 
         <ng-content select="router-outlet"></ng-content>
       </nb-layout-column>
