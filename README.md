@@ -7,10 +7,10 @@ SE CRACKIN
 
 Pull this repo then insert your image in sprint_1_frontend/src/assets,then go to src/app/@theme/layouts/main.layout.ts
 and insert these lines of code after changing it to your coressponding name and image name:
-      `  <p> </p>`	
-      `<p id="p">Ali</p>`
-      `<a ><img id="y" src="../../../../assets/Ali.jpg" /></a>`
-      `<p id="p">Hello World!!!</p>`
+      `  <p> </p>`\
+      `<p id="p">Ali</p>`\
+      `<a ><img id="y" src="../../../../assets/Ali.jpg" /></a>`\
+      `<p id="p">Hello World!!!</p>`\
 
 
 ## About
