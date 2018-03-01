@@ -4,11 +4,11 @@
       <ul class="nav navbar-nav">
         <li><a routerLink="/"><span><img src="/assets/images/logo.png" alt="T-14"></span></a></li>
         <li><a routerLink="/">SE T-14</a></li>
-        <li><a routerLink="/">Home</a></li>
         <li><a routerLink="/StoreC4"> Store C4 </a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li *ngIf="!auth.isLoggedIn()"><a routerLink="/login">Sign in</a></li>
+        <li *ngIf="!auth.isLoggedIn()"><a routerLink="/register">Register</a></li>
         <li *ngIf="auth.isLoggedIn()"><a routerLink="/profile">{{ auth.getUserDetails()?.name }}</a></li>
         <li *ngIf="auth.isLoggedIn()"><a (click)="auth.logout()">Logout</a></li>
       </ul>
