@@ -58,7 +58,9 @@ import 'rxjs/add/operator/delay';
           <p id="p">Youssef Shoeb</p>
     <a ><img id="y" src="../../../../assets/Shoeb.jpg" /></a>
       <p id="p">Youssef Omar Shoeb 37-0955</p>
-
+      <p id="p">Rafik</p>
+<a ><img id="y" src="../../../../assets/Rafik.PNG" /></a>
+  <p id="p">Rafik Sherif Louis 37-7419</p>
 
         <ng-content select="router-outlet"></ng-content>
       </nb-layout-column>
