@@ -10,6 +10,7 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { HomeComponent } from './home/home.component';
 import { StoreC4Component } from './StoreC4/StoreC4.component';
+import { StoreC5Component } from './StoreC5/StoreC5.component';
 import { AuthenticationService } from './authentication.service';
 import { AuthGuardService } from './auth-guard.service';
 
@@ -18,7 +19,9 @@ const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
   { path: 'profile', component: ProfileComponent, canActivate: [AuthGuardService] },
-  { path: 'StoreC4', component: StoreC4Component }
+  { path: 'StoreC4', component: StoreC4Component },
+  { path: 'StoreC5', component: StoreC5Component }
+
 ];
 
 @NgModule({
@@ -28,7 +31,8 @@ const routes: Routes = [
     LoginComponent,
     RegisterComponent,
     HomeComponent,
-    StoreC4Component
+    StoreC4Component,
+    StoreC5Component
   ],
   imports: [
     BrowserModule,
