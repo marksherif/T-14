@@ -1,5 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+
+import { enableProdMode } from '@angular/core';
+
+
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
@@ -31,6 +35,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
+
   declarations: [
     AppComponent,
     ProfileComponent,
@@ -41,7 +46,8 @@ const routes: Routes = [
     StoreC2Component,
     StoreC3Component,
     StoreC4Component,
-    StoreC5Component,
+      StoreC5Component,
+
   ],
   imports: [
     BrowserModule,
@@ -56,3 +62,4 @@ const routes: Routes = [
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+enableProdMode();
