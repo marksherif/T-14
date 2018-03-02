@@ -1,3 +1,39 @@
+<script type="text/javascript" src="angular.min.js"></script>
+<script type="text/javascript" src="main.js"></script>
+
 <div class="container">
 Products:
+
+<div class="container">
+  <h1>Product List</h1>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Seller Name</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tbody>
+       <tr>
+         <td><input class="form-control" ng-model="product.ID"></td>
+         <td><input class="form-control" ng-model="product.name"></td>
+         <td><input class="form-control" ng-model="product.price"></td>
+         <td><input class="form-control" ng-model="product.seller_name"></td>
+         <td><button class="btn btn-primary" ng-click="addProduct()">Add Product</button></td>
+       </tr>
+      <tr ng-repeat="product in products">
+                <td>{{product.ID}}</td>
+                <td>{{product.name}}</td>
+                <td>{{product.price}}</td>
+                <td>{{product.seller_name}}</td>
+                <td><button class="btn btn-danger" ng-click="remove(product._id)">Remove</button></td>
+                <td><button class="btn btn-warning" ng-click="edit(product._id)">Edit</button></td>
+              </tr>
+    </tbody>
+  </table>
+</div>
+
 </div>

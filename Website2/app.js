@@ -14,17 +14,39 @@ var bodyParser = require('body-parser');
 var cors = require('cors');
 // [SH] Require Passport
 var passport = require('passport');
+var config = require('./api/config/DBConnection');
+// var mongoose = require('mongoose');
+// mongoose.Promise = require('bluebird');
+// mongoose.connect('mongodb://localhost/mean-angular5', { useMongoClient: true, promiseLibrary: require('bluebird') })
+//   .then(() =>  console.log('connection succesful'))
+//   .catch((err) => console.error(err));
 
 // [SH] Bring in the data model
 require('./api/models/db');
 // [SH] Bring in the Passport config after model is defined
 require('./api/config/passport');
 
+require('./api/config/DBConnection');
+
 
 // [SH] Bring in the routes for the API (delete the default routes)
 var routesApi = require('./api/routes/index');
 
+// var book = require('./routes/product');
 var app = express();
+
+var mongojs = require('mongojs');
+var db = mongojs('meanAuth', ['products']);
+
+app.get('/products', function (req, res) {
+  console.log('I received a GET request');
+
+  db.products.find(function (err, docs) {
+    console.log(docs);
+    res.json(docs);
+  });
+});
+
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
