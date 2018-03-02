@@ -46,6 +46,9 @@ import 'rxjs/add/operator/delay';
        <p id="p">Ziad Ramzy</p>
       <a ><img id="y" src="../../../../assets/Ziad.jpg" /></a>
         <p> </p>
+	<p id="p">Youssef Sabry</p>
+      <a ><img id="y" src="../../../../assets/Sabry.jpg" /></a>
+        <p> </p>
       <p id="p">Mohab Tarek</p>
       <a ><img id="y" src="../../../../assets/Mohab.jpg" /></a>
         <p> </p>
