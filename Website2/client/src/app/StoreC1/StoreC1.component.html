@@ -5,7 +5,7 @@ Products:
 </div>
 <h2>My Products</h2>
 <ul class="sproducts">
-  <li>
+  <li *ngFor="product of products" (click)="onSelect(hero)"></li>
     <span class="badge">{{Sprod.id}} {{Sprod.name}} {{Sprod.price}} {{Sprod.created}} {{Sprod.updated}} </span>
   </li>
 </ul>
