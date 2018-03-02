@@ -5,4 +5,6 @@ import { Router } from '@angular/router';
   templateUrl: './StoreC1.component.html'
 })
 
-export class StoreC1Component {}
+export class StoreC1Component {
+
+}
