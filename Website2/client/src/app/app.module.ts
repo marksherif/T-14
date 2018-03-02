@@ -16,7 +16,6 @@ import { StoreC4Component } from './StoreC4/StoreC4.component';
 import { StoreC5Component } from './StoreC5/StoreC5.component';
 import { AuthenticationService } from './authentication.service';
 import { AuthGuardService } from './auth-guard.service';
-import { Storec1Component } from './storec1/storec1.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -43,7 +42,6 @@ const routes: Routes = [
     StoreC3Component,
     StoreC4Component,
     StoreC5Component,
-    Storec1Component
   ],
   imports: [
     BrowserModule,
