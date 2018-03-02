@@ -62,6 +62,18 @@ import 'rxjs/add/operator/delay';
 <a ><img id="y" src="../../../../assets/Rafik.PNG" /></a>
   <p id="p">Rafik Sherif Louis 37-7419</p>
   
+
+  <p> </p>
+<p id="p">Abdallah Eltayeb</p>
+<a ><img id="y" src="../../../../assets/Abdallah.PNG" /></a>
+<p id="p">Abdallah Eltayeb 37-12409</p>
+
+ <p> </p>
+<p id="p">Bassel Elwakil</p>
+<a ><img id="y" src="../../../../assets/bassel.png" /></a>
+<p id="p">Bassel Elwakil 37-4406</p>
+
+
         <p id="p">Mohamed Elneily</p>
 
   <a ><img id="y" src="../../../../assets/elneily.jpg" /></a>
