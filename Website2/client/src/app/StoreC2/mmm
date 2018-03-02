@@ -1,0 +1,74 @@
+Last login: Thu Mar  1 16:33:39 on ttys002
+macs-MacBook-Pro:~ mac$ sudo mongo
+Password:
+MongoDB shell version v3.6.3
+connecting to: mongodb://127.0.0.1:27017
+MongoDB server version: 3.6.3
+Server has startup warnings: 
+2018-03-01T16:02:20.369+0200 I CONTROL  [initandlisten] 
+2018-03-01T16:02:20.369+0200 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2018-03-01T16:02:20.369+0200 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2018-03-01T16:02:20.369+0200 I CONTROL  [initandlisten] ** WARNING: You are running this process as the root user, which is not recommended.
+2018-03-01T16:02:20.369+0200 I CONTROL  [initandlisten] 
+2018-03-01T16:02:20.369+0200 I CONTROL  [initandlisten] ** WARNING: This server is bound to localhost.
+2018-03-01T16:02:20.369+0200 I CONTROL  [initandlisten] **          Remote systems will be unable to connect to this server. 
+2018-03-01T16:02:20.370+0200 I CONTROL  [initandlisten] **          Start the server with --bind_ip <address> to specify which IP 
+2018-03-01T16:02:20.370+0200 I CONTROL  [initandlisten] **          addresses it should serve responses from, or with --bind_ip_all to
+2018-03-01T16:02:20.370+0200 I CONTROL  [initandlisten] **          bind to all interfaces. If this behavior is desired, start the
+2018-03-01T16:02:20.370+0200 I CONTROL  [initandlisten] **          server with --bind_ip 127.0.0.1 to disable this warning.
+2018-03-01T16:02:20.370+0200 I CONTROL  [initandlisten] 
+2018-03-01T16:02:20.370+0200 I CONTROL  [initandlisten] 
+2018-03-01T16:02:20.370+0200 I CONTROL  [initandlisten] ** WARNING: soft rlimits too low. Number of files is 256, should be at least 1000
+> use products
+switched to db products
+> db.products.insert({name:"iphone",price:"12",createdAt:"2/2/2018",updatedAt:"3/2/2018",sellerName:"Mariam"})
+WriteResult({ "nInserted" : 1 })
+> db.products.find().pretty()
+{
+	"_id" : ObjectId("5a96c04d891ec9a9345adb28"),
+	"ID" : "1",
+	"Name" : "Apple",
+	"Price" : "5000",
+	"UpdatedAt" : "15/02/2018",
+	"SellerName" : "Mariam"
+}
+{
+	"_id" : ObjectId("5a98229fe5c62d3728bd980a"),
+	"name" : "iphone",
+	"price" : "12",
+	"createdAt" : "2/2/2018",
+	"updatedAt" : "3/2/2018",
+	"sellerName" : "Mariam"
+}
+> db.products.drop()
+true
+> db.products.find().pretty()
+> db.products.insert({name:"iphone",price:"12",createdAt:"2/2/2018",updatedAt:"3/2/2018",sellerName:"Mariam"})
+WriteResult({ "nInserted" : 1 })
+> db.products.find().pretty()
+{
+	"_id" : ObjectId("5a982318e5c62d3728bd980b"),
+	"name" : "iphone",
+	"price" : "12",
+	"createdAt" : "2/2/2018",
+	"updatedAt" : "3/2/2018",
+	"sellerName" : "Mariam"
+}
+> db.products.find().pretty()
+{
+	"_id" : ObjectId("5a982318e5c62d3728bd980b"),
+	"name" : "iphone",
+	"price" : "12", 	"createdAt" : "2/2/2018",
+	"updatedAt" : "3/2/2018",
+	"sellerName" : "Mariam"
+}
+> db.products.find().pretty()
+{
+	"_id" : ObjectId("5a982318e5c62d3728bd980b"),
+	"name" : "iphone",
+	"price" : "12",
+	"createdAt" : "2/2/2018",
+	"updatedAt" : "3/2/2018",
+	"sellerName" : "Mariam"
+}
+> 
